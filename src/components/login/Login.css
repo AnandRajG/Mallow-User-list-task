@@ -1,0 +1,24 @@
+.login-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-card {
+    width: 40dvw;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.remember-checkbox {
+    margin-top: 8px;
+    margin-bottom: 16px;
+    color: #555;
+}
+
+.spin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
