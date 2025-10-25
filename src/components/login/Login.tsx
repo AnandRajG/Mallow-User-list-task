@@ -43,7 +43,7 @@ const Login = () => {
                     <Form.Item
                         name="email"
                         initialValue={'eve.holt@reqres.in'}
-                        rules={[{ required: true, message: "Please Enter your Email!" }]}
+                        rules={[{ required: true, message: "Please Enter your Email!", type: 'email' }]}
                     >
                         <Input
                             prefix={<UserOutlined />}

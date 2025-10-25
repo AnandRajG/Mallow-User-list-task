@@ -112,6 +112,7 @@ const UserList = () => {
                     messageApi.success('User Created Successfully')
                     onClosePopup()
                     onClearhandler()
+                    setState((prev) => ({ ...prev, loading: false }))
                 }
             }).catch(error => {
                 setState((prev) => ({ ...prev, loading: false }))
@@ -316,7 +317,7 @@ const UserList = () => {
                         <Form.Item label="last Name" name={'last_name'} rules={[{ required: true, message: 'Please Enter last name' }]}>
                             <Input placeholder="Please enter last name" autoComplete='off' />
                         </Form.Item>
-                        <Form.Item label="Email" name={'email'} rules={[{ required: true, message: 'Please Enter email' }]}>
+                        <Form.Item label="Email" name={'email'} rules={[{ required: true, message: 'Please Enter email', type: 'email' }]}>
                             <Input placeholder="please enter email" autoComplete='off' />
                         </Form.Item>
                         <Form.Item label="Profile Image Link" name={'profile_link'} rules={[{ required: true, message: 'Please Enter profile link' }]}>
